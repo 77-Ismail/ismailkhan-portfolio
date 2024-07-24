@@ -71,7 +71,7 @@ section h2 {
     text-align: center;
     font-size: 2em;
     margin-bottom: 20px;
-    color: #8e44ad;
+    color: #ffffff; /* Updated color for headings */
 }
 
 .about p {
@@ -105,13 +105,13 @@ section h2 {
     top: 0;
     bottom: 0;
     width: 4px;
-    background: #8e44ad;
+    background: #ffffff; /* Updated border color */
     transform: translateX(-50%);
 }
 
 .timeline-item {
     background: rgba(255, 255, 255, 0.1);
-    border: 2px solid #8e44ad;
+    border: 2px solid #ffffff; /* Updated border color */
     border-radius: 8px;
     margin: 20px 0;
     padding: 20px;
@@ -133,7 +133,7 @@ section h2 {
     width: 24px;
     height: 24px;
     background: #0a0a0a;
-    border: 2px solid #8e44ad;
+    border: 2px solid #ffffff; /* Updated border color */
     border-radius: 50%;
     z-index: 1;
 }
@@ -146,7 +146,7 @@ section h2 {
 .timeline-item h3 {
     font-size: 1.2em;
     margin: 0 0 10px 0;
-    color: #f4f4f9;
+    color: #ffffff; /* Updated color for headings */
 }
 
 .timeline-item h4 {
