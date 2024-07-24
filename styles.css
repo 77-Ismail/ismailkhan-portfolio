@@ -2,8 +2,21 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
-    background-color: #f4f4f9;
+    color: #f4f4f9;
+    background-color: #0a0a0a;
+    overflow: hidden;
+    position: relative;
+}
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(135deg, #1f1c18 0%, #8e44ad 100%);
+    opacity: 0.8;
 }
 
 .container {
@@ -12,10 +25,12 @@ body {
 }
 
 header.banner {
-    background-color: #282c34;
+    background-color: rgba(40, 44, 52, 0.9);
     color: white;
     text-align: center;
     padding: 50px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
 }
 
 .banner-content {
@@ -30,7 +45,7 @@ header.banner {
     border-radius: 50%;
     overflow: hidden;
     margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .photo-circle img {
@@ -56,7 +71,7 @@ section h2 {
     text-align: center;
     font-size: 2em;
     margin-bottom: 20px;
-    color: #0066cc;
+    color: #8e44ad;
 }
 
 .about p {
@@ -68,9 +83,10 @@ section h2 {
 }
 
 .experience {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
     padding: 50px 0;
-    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.3);
 }
 
 .timeline {
@@ -88,19 +104,19 @@ section h2 {
     top: 0;
     bottom: 0;
     width: 4px;
-    background: #0066cc;
+    background: #8e44ad;
     transform: translateX(-50%);
 }
 
 .timeline-item {
-    background: #fff;
-    border: 2px solid #0066cc;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #8e44ad;
     border-radius: 8px;
     margin: 20px 0;
     padding: 20px;
     width: 80%;
     position: relative;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
     transition: transform 0.3s ease-in-out;
 }
 
@@ -115,8 +131,8 @@ section h2 {
     left: -12px;
     width: 24px;
     height: 24px;
-    background: #fff;
-    border: 2px solid #0066cc;
+    background: #0a0a0a;
+    border: 2px solid #8e44ad;
     border-radius: 50%;
     z-index: 1;
 }
@@ -129,23 +145,41 @@ section h2 {
 .timeline-item h3 {
     font-size: 1.2em;
     margin: 0 0 10px 0;
-    color: #333;
+    color: #f4f4f9;
 }
 
 .timeline-item h4 {
     font-size: 1.1em;
     margin: 0 0 5px 0;
-    color: #0066cc;
+    color: #8e44ad;
 }
 
 .timeline-item p {
     font-size: 1em;
     margin: 5px 0;
-    color: #666;
+    color: #ccc;
 }
 
 @media screen and (max-width: 768px) {
     .timeline-item {
         width: 100%;
+    }
+}
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px white, 0 0 20px white;
+    animation: twinkle 5s infinite ease-in-out;
+}
+
+@keyframes twinkle {
+    0%, 100% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 0.2;
     }
 }
