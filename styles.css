@@ -226,33 +226,36 @@ section h2 {
     color: #ff6f61; /* Accent color for section headings */
 }
 
-.certificates-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 0 20px;
+.certificates-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.certificate-item {
+.certificates-list li {
     background: rgba(255, 255, 255, 0.1);
     border: 2px solid #ff6f61; /* Accent color for item border */
     border-radius: 8px;
-    padding: 20px;
-    text-align: center;
+    padding: 15px;
+    margin: 10px 0;
     color: #e0e0e0; /* Light text color */
+    text-align: center;
     box-shadow: 0 2px 4px rgba(0,0,0,0.5);
     transition: transform 0.3s ease-in-out;
 }
 
-.certificate-item:hover {
+.certificates-list li:hover {
     transform: scale(1.05);
 }
 
 @media screen and (max-width: 768px) {
-    .certificates-grid {
-        grid-template-columns: 1fr;
+    .certificates-list {
+        padding: 0 20px;
     }
 }
+
 
 
 @media screen and (max-width: 768px) {
