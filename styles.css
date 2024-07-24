@@ -212,6 +212,48 @@ section h2 {
     margin: 5px 0;
     color: #b0b0b0; /* Light text color */
 }
+.certificates {
+    background-color: rgb(12, 12, 12); /* Matching background color */
+    padding: 50px 0;
+    border-radius: 12px;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.5);
+}
+
+.certificates h2 {
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #ff6f61; /* Accent color for section headings */
+}
+
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.certificate-item {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #ff6f61; /* Accent color for item border */
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    color: #e0e0e0; /* Light text color */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.certificate-item:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+    .certificates-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 @media screen and (max-width: 768px) {
     .volunteer-timeline {
