@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     color: #e0e0e0; /* Light text color for contrast */
-    background-color: #1a1a1a; /* Dark background */
+    background-color: #000000; /* Dark background */
     overflow-x: hidden;
     position: relative;
 }
@@ -65,7 +65,7 @@ p {
 
 section {
     padding: 60px 0;
-    border-bottom: 2px solid #444444; /* New section break color */
+    border-bottom: none; /* Remove section breaks */
 }
 
 section h2 {
@@ -84,14 +84,14 @@ section h2 {
     color: #b0b0b0;
 }
 
-.experience {
+.experience, .volunteer {
     background-color: rgba(30, 30, 30, 0.8);
     padding: 50px 0;
     border-radius: 12px;
     box-shadow: 0 -2px 4px rgba(0,0,0,0.5);
 }
 
-.experience h2 {
+.experience h2, .volunteer h2 {
     color: #ff6f61; /* Accent color for section headings */
 }
 
@@ -137,7 +137,7 @@ section h2 {
     left: -12px;
     width: 24px;
     height: 24px;
-    background: #1a1a1a;
+    background: #000000;
     border: 2px solid #ff6f61; /* Accent color for item border */
     border-radius: 50%;
     z-index: 1;
@@ -164,20 +164,6 @@ section h2 {
     font-size: 1em;
     margin: 5px 0;
     color: #b0b0b0; /* Light text color */
-}
-
-.volunteer {
-    background-color: rgba(30, 30, 30, 0.8);
-    padding: 50px 0;
-    border-radius: 12px;
-    box-shadow: 0 -2px 4px rgba(0,0,0,0.5);
-}
-
-.volunteer h2 {
-    text-align: center;
-    font-size: 2.2em;
-    margin-bottom: 20px;
-    color: #ff6f61; /* Accent color for section headings */
 }
 
 .volunteer-timeline {
