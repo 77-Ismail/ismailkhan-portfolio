@@ -2,8 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: #f4f4f9;
-    background-color: #0a0a0a;
+    color: #e0e0e0; /* Light text color for contrast */
+    background-color: #1a1a1a; /* Dark background */
     overflow-x: hidden;
     position: relative;
 }
@@ -15,22 +15,22 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: linear-gradient(135deg, #000000 0%, #434343 100%);
-    opacity: 0.8;
+    background: linear-gradient(135deg, #000000 0%, #333333 100%);
+    opacity: 0.9;
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
 header.banner {
-    background-color: rgba(40, 44, 52, 0.9);
-    color: #f4f4f9;
+    background-color: rgba(30, 30, 30, 0.8);
+    color: #e0e0e0;
     text-align: center;
-    padding: 50px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
+    padding: 60px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
 }
 
 .banner-content {
@@ -45,7 +45,7 @@ header.banner {
     border-radius: 50%;
     overflow: hidden;
     margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
 
 .photo-circle img {
@@ -64,14 +64,15 @@ p {
 }
 
 section {
-    padding: 50px 0;
+    padding: 60px 0;
+    border-bottom: 2px solid #444444; /* New section break color */
 }
 
 section h2 {
     text-align: center;
-    font-size: 2em;
+    font-size: 2.2em;
     margin-bottom: 20px;
-    color: #8e44ad; /* Original color for headings */
+    color: #ff6f61; /* Accent color for section headings */
 }
 
 .about p {
@@ -80,14 +81,18 @@ section h2 {
     line-height: 1.6;
     max-width: 700px;
     margin: 0 auto;
-    color: #ccc;
+    color: #b0b0b0;
 }
 
 .experience {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(30, 30, 30, 0.8);
     padding: 50px 0;
-    border-radius: 10px;
-    box-shadow: 0 -2px 4px rgba(0,0,0,0.3);
+    border-radius: 12px;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.5);
+}
+
+.experience h2 {
+    color: #ff6f61; /* Accent color for section headings */
 }
 
 .timeline {
@@ -105,13 +110,13 @@ section h2 {
     top: 0;
     bottom: 0;
     width: 4px;
-    background: #8e44ad; /* Original color for timeline border */
+    background: #ff6f61; /* Accent color for timeline border */
     transform: translateX(-50%);
 }
 
 .timeline-item {
     background: rgba(255, 255, 255, 0.1);
-    border: 2px solid #8e44ad; /* Original color for item border */
+    border: 2px solid #ff6f61; /* Accent color for item border */
     border-radius: 8px;
     margin: 20px 0;
     padding: 20px;
@@ -132,8 +137,8 @@ section h2 {
     left: -12px;
     width: 24px;
     height: 24px;
-    background: #0a0a0a;
-    border: 2px solid #8e44ad; /* Original color for item border */
+    background: #1a1a1a;
+    border: 2px solid #ff6f61; /* Accent color for item border */
     border-radius: 50%;
     z-index: 1;
 }
@@ -146,32 +151,33 @@ section h2 {
 .timeline-item h3 {
     font-size: 1.2em;
     margin: 0 0 10px 0;
-    color: #f4f4f9; /* Original color for item headings */
+    color: #e0e0e0; /* Light text color */
 }
 
 .timeline-item h4 {
     font-size: 1.1em;
     margin: 0 0 5px 0;
-    color: #8e44ad; /* Original color for item sub-headings */
+    color: #ff6f61; /* Accent color for sub-headings */
 }
 
 .timeline-item p {
     font-size: 1em;
     margin: 5px 0;
-    color: #ccc;
+    color: #b0b0b0; /* Light text color */
 }
+
 .volunteer {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(30, 30, 30, 0.8);
     padding: 50px 0;
-    border-radius: 10px;
-    box-shadow: 0 -2px 4px rgba(0,0,0,0.3);
+    border-radius: 12px;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.5);
 }
 
 .volunteer h2 {
     text-align: center;
-    font-size: 2em;
+    font-size: 2.2em;
     margin-bottom: 20px;
-    color: #8e44ad; /* Consistent with section headings */
+    color: #ff6f61; /* Accent color for section headings */
 }
 
 .volunteer-timeline {
@@ -184,7 +190,7 @@ section h2 {
 
 .volunteer-item {
     background: rgba(255, 255, 255, 0.1);
-    border: 2px solid #8e44ad; /* Consistent with section border */
+    border: 2px solid #ff6f61; /* Accent color for item border */
     border-radius: 8px;
     padding: 20px;
     width: 250px;
@@ -199,19 +205,19 @@ section h2 {
 .volunteer-item h3 {
     font-size: 1.2em;
     margin: 0 0 10px 0;
-    color: #f4f4f9; /* Light text color */
+    color: #e0e0e0; /* Light text color */
 }
 
 .volunteer-item h4 {
     font-size: 1.1em;
     margin: 0 0 5px 0;
-    color: #8e44ad; /* Accent color for sub-headings */
+    color: #ff6f61; /* Accent color for sub-headings */
 }
 
 .volunteer-item p {
     font-size: 1em;
     margin: 5px 0;
-    color: #ccc; /* Light text color */
+    color: #b0b0b0; /* Light text color */
 }
 
 @media screen and (max-width: 768px) {
@@ -224,10 +230,7 @@ section h2 {
         width: 100%;
         max-width: 600px;
     }
-}
 
-
-@media screen and (max-width: 768px) {
     .timeline-item {
         width: 100%;
     }
