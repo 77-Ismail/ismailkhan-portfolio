@@ -25,7 +25,7 @@ body {
 }
 
 header.banner {
-    background-color: rgba(30, 30, 30, 0.8);
+    background-color: rgba(20, 20, 20, 0.8); /* Slightly lighter for contrast */
     color: #e0e0e0;
     text-align: center;
     padding: 60px 0;
@@ -72,11 +72,11 @@ section h2 {
     text-align: center;
     font-size: 2.2em;
     margin-bottom: 20px;
-    color: #ff6f61; /* Accent color for section headings */
+    color: #00bcd4; /* Professional accent color for section headings */
 }
 
 .about {
-    background-color: rgb(12, 12, 12); /* Updated background color */
+    background-color: rgb(12, 12, 12); /* Consistent background color */
     padding: 50px 0;
     border-radius: 12px;
     box-shadow: 0 -2px 4px rgba(0,0,0,0.5);
@@ -91,15 +91,15 @@ section h2 {
     color: #b0b0b0;
 }
 
-.experience, .volunteer {
-    background-color: rgb(12, 12, 12); /* Updated background color */
+.experience, .volunteer, .certificates {
+    background-color: rgb(12, 12, 12); /* Consistent background color */
     padding: 50px 0;
     border-radius: 12px;
     box-shadow: 0 -2px 4px rgba(0,0,0,0.5);
 }
 
-.experience h2, .volunteer h2 {
-    color: #ff6f61; /* Accent color for section headings */
+.experience h2, .volunteer h2, .certificates h2 {
+    color: #00bcd4; /* Professional accent color for section headings */
 }
 
 .timeline {
@@ -117,13 +117,13 @@ section h2 {
     top: 0;
     bottom: 0;
     width: 4px;
-    background: #ff6f61; /* Accent color for timeline border */
+    background: #00bcd4; /* Accent color for timeline border */
     transform: translateX(-50%);
 }
 
 .timeline-item {
-    background: rgb(12, 12, 12); /* Updated background color */
-    border: 2px solid #ff6f61; /* Accent color for item border */
+    background: rgb(12, 12, 12); /* Consistent background color */
+    border: 2px solid #00bcd4; /* Accent color for item border */
     border-radius: 8px;
     margin: 20px 0;
     padding: 20px;
@@ -145,7 +145,7 @@ section h2 {
     width: 24px;
     height: 24px;
     background: #000000;
-    border: 2px solid #ff6f61; /* Accent color for item border */
+    border: 2px solid #00bcd4; /* Accent color for item border */
     border-radius: 50%;
     z-index: 1;
 }
@@ -164,7 +164,7 @@ section h2 {
 .timeline-item h4 {
     font-size: 1.1em;
     margin: 0 0 5px 0;
-    color: #ff6f61; /* Accent color for sub-headings */
+    color: #00bcd4; /* Accent color for sub-headings */
 }
 
 .timeline-item p {
@@ -182,8 +182,8 @@ section h2 {
 }
 
 .volunteer-item {
-    background: rgb(12, 12, 12); /* Updated background color */
-    border: 2px solid #ff6f61; /* Accent color for item border */
+    background: rgb(12, 12, 12); /* Consistent background color */
+    border: 2px solid #00bcd4; /* Accent color for item border */
     border-radius: 8px;
     padding: 20px;
     width: 250px;
@@ -204,7 +204,7 @@ section h2 {
 .volunteer-item h4 {
     font-size: 1.1em;
     margin: 0 0 5px 0;
-    color: #ff6f61; /* Accent color for sub-headings */
+    color: #00bcd4; /* Accent color for sub-headings */
 }
 
 .volunteer-item p {
@@ -212,31 +212,10 @@ section h2 {
     margin: 5px 0;
     color: #b0b0b0; /* Light text color */
 }
-.certificates {
-    background-color: rgb(12, 12, 12); /* Matching background color */
-    padding: 50px 0;
-    border-radius: 12px;
-    box-shadow: 0 -2px 4px rgba(0,0,0,0.5);
-}
-
-.certificates h2 {
-    text-align: center;
-    font-size: 2.2em;
-    margin-bottom: 20px;
-    color: #ff6f61; /* Accent color for section headings */
-}
-
-.certificates-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    max-width: 800px;
-    margin: 0 auto;
-}
 
 .certificates-list li {
     background: rgba(255, 255, 255, 0.1);
-    border: 2px solid #ff6f61; /* Accent color for item border */
+    border: 2px solid #00bcd4; /* Accent color for item border */
     border-radius: 8px;
     padding: 15px;
     margin: 10px 0;
@@ -255,8 +234,6 @@ section h2 {
         padding: 0 20px;
     }
 }
-
-
 
 @media screen and (max-width: 768px) {
     .volunteer-timeline {
