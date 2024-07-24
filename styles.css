@@ -10,7 +10,7 @@ body {
 /* Navigation Menu Styles */
 .navbar {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     margin-bottom: 20px;
 }
 
