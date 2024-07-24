@@ -7,6 +7,33 @@ body {
     overflow-x: hidden;
     position: relative;
 }
+/* Navigation Menu Styles */
+.navbar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #e0e0e0; /* Light text color */
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #00bcd4; /* Accent color on hover */
+}
+
 
 #background {
     position: fixed;
